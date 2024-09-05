@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+/* Center the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px; /* Makes the container take full viewport height */
+    margin-top: 60px;
+}
+
+/* Increase the image size */
+.image-container img {
+    max-width: 100%; /* Scale the image within its container */
+    height: auto;    /* Maintain aspect ratio */
+    width: 700px;    /* Adjust the width as needed */
+}
+
+.left-side{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.image-container img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.selectors {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em; /* Adjust gap as needed */
+}
+
+.dropdown button {
+    background-color: #6886ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 122px; /* Adjust the width as needed */
+}
+
+.dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    background-color: #bbbbdd;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown a:hover {
+    color: white; /* Change text color to white on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

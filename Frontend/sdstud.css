@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+    background-color: #bcbec0;
+}
+
+header {
+    background-color: #0098d8;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 2;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.left-header h1 {
+    font-size: 36px;
+    margin-left: -15px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.Heading2nd {
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.markscard {
+    width: 800px;
+    margin: 20px auto; /* Center the markscard container */
+}
+
+.marks10th, .marks12th {
+    background-color: #d2d2d4;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Space between the two rectangles */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all items horizontally */
+}
+
+.centered-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form items horizontally */
+    width: 100%;
+    max-width: 600px; /* Limit width to prevent too wide forms */
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form {
+    width: 100%; /* Ensure the form takes full width of its container */
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    width: 100%; /* Ensure labels take full width */
+    text-align: center; /* Center align text in labels */
+}
+
+input[type="text"] {
+    width: calc(100% - 10px); /* Make inputs take up half of the row minus spacing */
+    padding: 5px;
+    margin-right: 10px; /* Space between inputs in the same row */
+    box-sizing: border-box;
+    text-align: center; /* Center align text inside inputs */
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+.subject-row {
+    display: flex;
+    justify-content: center; /* Center inputs horizontally within row */
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.subject-row input {
+    margin-right: 10px; /* Space between inputs in the same row */
+}
+
+.upload-section {
+    margin-top: 20px;
+    text-align: center; /* Center align text in upload section */
+    width: 100%;
+}
+
+.upload-section label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center; /* Center align text in label */
+}
+
+.upload-section input[type="file"] {
+    display: block;
+    margin-left: 290px; /* Center the file input */
+    padding-right:0px !important;
+}
+
+/* New boxes */
+.new-boxes-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px;
+    padding: 20px;
+    width: 800px; /* Ensure width matches the other rectangles */
+    margin: auto; /* Center the container horizontally */
+    margin-top: -20px;
+}
+
+.family-income-certificate, .sc-st-certificate {
+    background-color: #d2d2d4;
+    width: 100%;
+    max-width: 1020px; /* Ensure width matches the other rectangles */
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px; /* Adjust font size */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional shadow for better visibility */
+}
+
+.family-income-certificate .title, .sc-st-certificate .title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.family-income-certificate label, .sc-st-certificate label {
+    margin-top: 10px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center; /* Center align text in labels */
+}
+
+.family-income-certificate input, .sc-st-certificate input {
+    width: calc(80% - 10px); /* Adjust width to fit with padding */
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    text-align: center; /* Center align text inside inputs */
+}
+
+.upload-section {
+    margin-top: 20px;
+}
+
+.upload-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.upload-section input[type="file"] {
+    display: block;
+    margin-left: 290px; /* Center the file input */
+}
+
+#student-heading {
+    font-size: 36px;
+    margin: 20px;
+}
+
+.next-page-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.next-page-btn {
+    
+    background-color: #0098d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    
+}
+
+.next-page-btn:hover {
+    background-color: #007bb5;
+}
+
+.NXT{
+    text-decoration: none;
+    color: white;
+}
+/* Updated CSS for SC/ST Certificate Section */
+.sc-st-certificate {
+    background-color: #d2d2d4;
+    width: 100%;
+    max-width: 1020px; /* Ensure width matches the other rectangles */
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px; /* Adjust font size */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional shadow for better visibility */
+}
+
+.title-container {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    width: 100%; /* Ensure full width */
+    justify-content: center; /* Center align items horizontally */
+    margin-bottom: 15px; /* Space below the title and checkbox */
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px; /* Space between title and checkbox container */
+}
+
+.if-applicable {
+    font-weight: normal; /* Remove boldness */
+    margin-left: 5px; /* Space between title and "If-Applicable" text */
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    margin-left: 10px; /* Space between text and checkbox */
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin: 0; /* Remove margin around checkbox */
+}
+
+/* Ensuring labels and inputs are centered */
+.sc-st-certificate label {
+    margin-top: 10px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center; /* Center align text in labels */
+}
+
+.sc-st-certificate input {
+    width: calc(80% - 10px); /* Adjust width to fit with padding */
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    text-align: center; /* Center align text inside inputs */
+}
+
+#sc-st-toggle{
+    width: 20px;
+    margin-top: -13px;
+    margin-left: -13px;
+}

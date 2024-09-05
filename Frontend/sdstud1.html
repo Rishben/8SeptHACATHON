@@ -1,0 +1,135 @@
+<!-- AFTER STUDENT CLICKS ON NEXT PAGE TO UPLOAD DOCUMENTS  P2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UploadDocumet2</title>
+    <link rel="stylesheet" href="sdstud1.css">
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <img src="IMAGES/mainlogo.png" alt="Logo 1" class="logo">
+            <h1 id="Student">Student</h1>
+        </div>
+    </header>
+    
+    <div class="rectangles-container">
+        <!-- First Rectangle -->
+        <div class="rectangle">
+            <h2>Domicile Certificate</h2>
+            <div class="row">
+                <div class="input-group">
+                    <label for="name">Name (as per ertificate)</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label for="issueDate">Certificate Date of Issue</label>
+                    <input type="text" id="issueDate" placeholder="dd/mm/yy" required>
+                </div>
+                <div class="input-group">
+                    <label for="certificateNo">Certificate No.</label>
+                    <input type="text" id="certificateNo" placeholder="Enter certificate number" required>
+                </div>
+                <div class="upload-group">
+                    <label for="upload">Upload Domicile Certificate</label>
+                    <input type="file" id="upload" required>
+                </div>
+            </div>
+        </div>
+        <!-- Second Rectangle -->
+        <div class="rectangle">
+            <h2>Adhaar Details</h2>
+            <div class="row">
+                <div class="input-group">
+                    <label for="adhaarNo">Adhaar No.</label>
+                    <input type="text" id="adhaarNo" placeholder="Enter Adhaar number" required>
+                </div>
+                <div class="input-group">
+                    <label for="nameAdhaar">Name</label>
+                    <input type="text" id="nameAdhaar" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="Enter your address" required>
+                </div>
+            </div>
+            <div class="upload-group-container">
+                <div class="upload-group">
+                    <label for="passportPhoto">Passport Size Photo</label>
+                    <input type="file" id="passportPhoto" required>
+                </div>
+                <div class="upload-group">
+                    <label for="signaturePhoto">Signature Photo</label>
+                    <input type="file" id="signaturePhoto"required>
+                </div>
+                <div class="upload-group">
+                    <label for="adhaarCardPhoto">Adhaar Card Photo</label>
+                    <input type="file" id="adhaarCardPhoto" required>
+                </div>
+            </div>
+        </div>
+        <div class="rectangle">
+            <h2>
+                Disability Certificate 
+                <span class="not-bold">
+                    <label for="disability-checkbox" class="if-applicable-text">(if-applicable)</label>
+                    <input type="checkbox" id="disability-checkbox" class="if-applicable-checkbox" required>
+                </span>
+            </h2>
+            <div class="row">
+                <div class="input-group">
+                    <label for="certificateNoDisability">Certificate No.</label>
+                    <input type="text" id="certificateNoDisability" placeholder="Enter certificate number" required>
+                </div>
+                <div class="input-group">
+                    <label for="typesOfDisability">Types of Disability</label>
+                    <input type="text" id="typesOfDisability" placeholder="Enter types of disability" required>
+                </div>
+                <div class="upload-group">
+                    <label for="pwdCertificate">Upload Your PWD Certificate</label>
+                    <input type="file" id="pwdCertificate" required>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Rectangle 4 -->
+        <div class="rectangle">
+            <h2>
+                Diploma Certificate 
+                <span class="not-bold">
+                    <label for="diploma-checkbox" class="if-applicable-text">(if-applicable)</label>
+                    <input type="checkbox" id="diploma-checkbox" class="if-applicable-checkbox"required>
+                </span>
+            </h2>
+            <div class="row">
+                <div class="input-group">
+                    <label for="uid">UID</label>
+                    <input type="text" id="uid" placeholder="Enter UID"required>
+                </div>
+                <div class="input-group">
+                    <label for="course">Course</label>
+                    <input type="text" id="course" placeholder="Enter course name"required>
+                </div>
+                <div class="input-group">
+                    <label for="yearOfPassing">Year of Passing</label>
+                    <input type="text" id="yearOfPassing" placeholder="Enter year of passing"required>
+                </div>
+                <div class="input-group">
+                    <label for="division">Division</label>
+                    <input type="text" id="division" placeholder="Enter division"required>
+                </div>
+                <div class="upload-group">
+                    <label for="diplomaCertificate">Upload Your Diploma Certificate</label>
+                    <input type="file" id="diplomaCertificate" required>
+                </div>
+            </div>
+        </div>
+        <div class="end-page-container">
+            <button class="end-page-btn">Submit</button>
+        </div>
+    </div>
+    <script src="sdstud1.js"></script>
+</body>
+</html>

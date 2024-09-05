@@ -1,0 +1,134 @@
+<!--After the student clicks on upload Documents...-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta uniqueid="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UploadDocument </title>
+    <link rel="stylesheet" href="sdstud.css">
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <img src="IMAGES/mainlogo.png" alt="Logo 1" class="logo">
+            <h1 id="Student">Student</h1>
+        </div>
+    </header>
+    <main>
+        <div class="studentdocs">
+            <p class="Heading2nd">Documents to Upload</p>
+            <div class="markscard">
+                <div class="marks10th">
+                    <p class="title">10th Marks Card</p>
+                    <form class="centered-form">
+                        <label for="Uniqueid">Unique ID</label>
+                        <input type="text" id="Uniqueid" placeholder="e.g. 123xxx" required/>
+                        
+                        <label for="Institution10th">Institution</label>
+                        <input type="text" id="Institution10th" required/>
+                        
+                        <label for="Board">Board</label>
+                        <input type="text" id="Board" required/>
+                        
+                        <p class="M10">Enter your Marks</p>
+                        
+                        <div class="subject-row">
+                            <input type="text" id="English" placeholder="Eng" required/>
+                            <input type="text" id="Socialscience" placeholder="Soc" required/>
+                        </div>
+                        <div class="subject-row">
+                            <input type="text" id="Hindi" placeholder="Hin" required/>
+                            <input type="text" id="Math" placeholder="Math" required/>
+                        </div>
+                        <div class="subject-row">
+                            <input type="text" id="Science" placeholder="Sci" required/>
+                            <input type="text" id="Subject6" placeholder="Sub6" required/>
+                        </div>
+                    </form>
+                    <div class="upload-section">
+                        <label for="memo10">Upload 10th Marks:</label>
+                        <input type="file" id="memo10" name="memo10" accept="image/png, image/jpeg" required/>
+                    </div>
+                </div>
+                
+                <div class="marks12th">
+                    <p class="title">12th Marks Card</p>
+                    <form class="centered-form">
+                        <label for="Registereno">Registered No.</label>
+                        <input type="text" id="Registereno" placeholder="e.g. 123xxx" required/>
+                        
+                        <label for="Institution12th">Institution</label>
+                        <input type="text" id="Institution12th" required/>
+                        
+                        <label for="Course">Course</label>
+                        <input type="text" id="Course" required/>
+                        
+                        <p class="M12">Enter your Marks</p>
+                        
+                        <div class="subject-row">
+                            <input type="text" id="English12th" placeholder="Eng" required/>
+                            <input type="text" id="Hindi12th" placeholder="Hin" required/>
+                        </div>
+                        <div class="subject-row">
+                            <input type="text" id="Biology12th" placeholder="Bio" required/>
+                            <input type="text" id="Math12th" placeholder="Math"required />
+                        </div>
+                        <div class="subject-row">
+                            <input type="text" id="Physics12th" placeholder="Phy" required/>
+                            <input type="text" id="Chemistry12th" placeholder="Chem" required/>
+                        </div>
+                    </form>
+                    <div class="upload-section">
+                        <label for="memo12">Upload 12th Marks:</label>
+                        <input type="file" id="memo12" name="memo12" accept="image/png, image/jpeg" required/>
+                    </div>
+                </div>
+            </div>                      
+            
+            <div class="new-boxes-container">
+                <div class="family-income-certificate">
+                    <div class="title">Family Income Certificate</div>
+                    <label for="cert-no">Certificate no.</label>
+                    <input type="text" id="cert-no" placeholder="Certificate no." required>
+                    <label for="working-family">Working family members' details</label>
+                    <input type="text" id="working-family" placeholder="Working family members' details" required>
+                    <label for="relation">Relation</label>
+                    <input type="text" id="relation" placeholder="Relation" required>
+                    <label for="total-income">Total income</label>
+                    <input type="text" id="total-income" placeholder="Total income" required>
+                    <div class="upload-section">
+                        <label for="income-upload">Upload your income certificate:</label>
+                        <input type="file" id="income-upload" required>
+                    </div>
+                </div>
+                <div class="sc-st-certificate">
+                    <div class="title-container">
+                        <div class="title">
+                            SC/ST Certificate
+                            <span class="if-applicable">(If-Applicable)</span>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="sc-st-toggle">
+                        </div>
+                    </div>
+                    <label for="sc-st-cert-no">Certificate no.</label>
+                    <input type="text" id="sc-st-cert-no" placeholder="Certificate no." required>
+                    <label for="father-name">Father's name</label>
+                    <input type="text" id="father-name" placeholder="Father's name" required>
+                    <label for="date-of-issue">Date of Issue</label>
+                    <input type="text" id="date-of-issue" placeholder="Date of Issue" required>
+                    <label for="religion">Religion</label>
+                    <input type="text" id="religion" placeholder="Religion" required>
+                    <div class="upload-section">
+                        <label for="sc-st-upload">Upload your SC/ST certificate:</label>
+                        <input type="file" id="sc-st-upload">
+                    </div>
+                </div>          
+            </div>            
+        <div class="next-page-container">
+            <button class="next-page-btn">Next Page</button>
+        </div>
+    </main>
+    <script src="sdstud.js"></script>
+</body>
+</html>
